@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi first JS</title>
+</head>
+
+<body>
+    <script>
+        let userName = prompt("HI! WHAT'S YOUR NAME?")
+        alert(`NICE TO MEET YOU ${userName}!`)
+        let firstNumber = prompt(`PLEASE, ${userName}, ENTER YOUR FIRST NUMBER`);
+        if (firstNumber == +firstNumber) {
+            alert(`OK, I ACCEPTED ${firstNumber}!`);
+        }
+        else {
+            alert(`HEY, ${userName} I ASKED FOR A NUMBER!`);
+
+        }
+        let secondNumber = prompt("PLEASE, ENTER YOUR SECOND NUMBER");
+        if (secondNumber == +secondNumber) {
+            alert(`OK, I ACCEPTED ${secondNumber}!`);
+        }
+        else {
+            alert(`HEY, ${userName} I ASKED FOR A NUMBER!`);
+        }
+        alert("AND NOW I'LL ADD THESE TWO NUMBERS!");
+        let resultSum = +firstNumber + +secondNumber;
+        alert(`TAKE IT: ${resultSum}!!!!`);
+        alert(`GOODBUY ${userName}!`)
+    </script>
+</body>
+
+</html>
