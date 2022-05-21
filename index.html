@@ -13,20 +13,10 @@
         let userName = prompt("HI! WHAT'S YOUR NAME?")
         alert(`NICE TO MEET YOU ${userName}!`)
         let firstNumber = prompt(`PLEASE, ${userName}, ENTER YOUR FIRST NUMBER`);
-        if (firstNumber == +firstNumber) {
-            alert(`OK, I ACCEPTED ${firstNumber}!`);
-        }
-        else {
-            alert(`HEY, ${userName} I ASKED FOR A NUMBER!`);
-
-        }
+        (firstNumber == +firstNumber) ? alert(`OK, I ACCEPTED ${firstNumber}!`) : alert(`HEY, ${userName} I ASKED FOR A NUMBER!`);
+   
         let secondNumber = prompt("PLEASE, ENTER YOUR SECOND NUMBER");
-        if (secondNumber == +secondNumber) {
-            alert(`OK, I ACCEPTED ${secondNumber}!`);
-        }
-        else {
-            alert(`HEY, ${userName} I ASKED FOR A NUMBER!`);
-        }
+        (secondNumber == +secondNumber) ? alert(`OK, I ACCEPTED ${secondNumber}!`) : alert(`HEY, ${userName} I ASKED FOR A NUMBER!`);
         alert("AND NOW I'LL ADD THESE TWO NUMBERS!");
         let resultSum = +firstNumber + +secondNumber;
         alert(`TAKE IT: ${resultSum}!!!!`);
